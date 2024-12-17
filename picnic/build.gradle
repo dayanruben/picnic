@@ -19,7 +19,8 @@ kotlin {
   tvosArm64()
   tvosX64()
   tvosSimulatorArm64()
-  wasm().nodejs()
+  wasmJs().nodejs()
+  wasmWasi().nodejs()
   watchosArm32()
   watchosArm64()
   watchosDeviceArm64()
@@ -29,7 +30,7 @@ kotlin {
   sourceSets {
     commonMain {
       dependencies {
-        implementation 'com.jakewharton.crossword:crossword:0.3.0'
+        implementation 'com.jakewharton.crossword:crossword:0.4.0'
       }
     }
     commonTest {
